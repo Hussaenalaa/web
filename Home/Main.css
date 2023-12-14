@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(219, 219, 219);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Utility Classes */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-secondary {
+  color: #fff;
+  background: #383848;
+  margin-top: 2rem;
+}
+
+.btn-third:hover {
+  background: #383848;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third {
+  background: #e4b95b;
+}
+
+.primary-text {
+  color: #84e45b;
+}
+
+/* Header  */
+
+header {
+  height: 100vh;
+  background: url("./images/October\ Technological\ University.jpeg") center
+    center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.btnLogin-popup ,
+.btnattend-popup {
+  width: 100px;
+  height: 35px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.btnLogin-popup:hover ,
+.btnattend-popup:hover {
+  background: #fff;
+  color: #162938;
+}
+
+#navbar img {
+  width: 300px;
+  margin-left: 5px;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+nav ul li a {
+  padding: 15px 20px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px solid #84e45b;
+}
+
+header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+header .content h1 {
+  font-size: 40px;
+  color: #fff;
+}
+
+header .content p {
+  color: #fff;
+  margin: 20px 0 40px;
+}
+
+header * {
+  z-index: 10;
+}
+/* End Header */
+
+
+/* About */
+
+#about {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+#about .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#about h2 {
+  font-size: 40px;
+  color: #383848;
+  margin-bottom: 20px;
+}
+
+#about .about-content {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+#about .about-content img {
+  width: 300px;
+}
+
+#about .about-content p {
+  color: #9b9bb6;
+  margin-right: 7rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+/* About */
+
+/* Footer Start*/
+
+#footer {
+  background: #383848;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #fff;
+}
+
+footer {
+  background-color: #6d7e86;
+}
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+  transition: 0.7s ease;
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: #222121;
+  opacity: 0.9;
+  transition: 0.7s ease;
+}
+
+.socialIcons a:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav {
+  margin: 30px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  background-color: #696969;
+  padding: 20px;
+  text-align: center;
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.developers {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+.Contact ul {
+  list-style-type: none;
+}
+
+.Contact li {
+  margin: 15px;
+  font-size: large;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/* Footer End*/
